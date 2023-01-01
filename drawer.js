@@ -11,10 +11,10 @@ var ctx = canvas.getContext('2d')
 function resize() {
 	canvas.setAttribute('width', window.innerWidth*2)
 	canvas.setAttribute('height', window.innerHeight*2)
-	ctx.font = '30px serif'
-	ctx.fillText('PWAサンプルアプリ', 20, 40)
+	ctx.font = '50px serif'
+	ctx.fillText('PWA K-site', 20, 40)
 	ctx.font = '25px serif'
-	ctx.fillText('マウスや指タッチで線が描けるよ！', 15, 80)
+	ctx.fillText('マウスや指タッチで線が描けるよ！！！！', 15, 80)
 	ctx.lineWidth = 5
 	ctx.scale(2, 2)
 }
