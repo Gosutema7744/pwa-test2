@@ -34,12 +34,7 @@ canvas.addEventListener('touchmove', drawLine, false)
 function drawLine(event) {
 	if(!drawing) return
 	if(event.type==='touchmove') event = event.changedTouches[0]
-	ctx.strokeStyle =
-		'rgb('+
-		(Math.floor(Math.random()*255)) + ',' +
-		(Math.floor(Math.random()*255)) + ',' +
-		(Math.floor(Math.random()*255)) + ')'
-	;
+	ctx.strokeStyle ='black';
 	ctx.beginPath()
 	ctx.moveTo(last_x, last_y)
 	ctx.lineTo(event.pageX, event.pageY)
